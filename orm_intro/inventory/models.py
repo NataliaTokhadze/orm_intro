@@ -5,3 +5,6 @@ class Table(models.Model):
     description = models.TextField()
     price = models.FloatField()
     stock = models.IntegerField()
+
+    def __str__(self):
+        return f'{self.name}, {self.description}, {self.price}, {self.stock}'
